@@ -1,15 +1,15 @@
-let files = ["콩이(1).jpg",
-             "콩이(2).jpg",
-             "콩이(3).jpg",
-             "콩이(4).jpg",
-             "콩이(5).jpg",
-             "콩이(6).jpg",
-             "콩이(7).jpg",
-             "콩이(8).jpg",
-             "콩이(9).jpg",
-             "콩이(10).jpg",
-             "콩이(11).jpg",
-             "콩이(12).jpg"];
+let files = ["./image/콩이(1).jpg",
+             "./image/콩이(2).jpg",
+             "./image/콩이(3).jpg",
+             "./image/콩이(4).jpg",
+             "./image/콩이(5).jpg",
+             "./image/콩이(6).jpg",
+             "./image/콩이(7).jpg",
+             "./image/콩이(8).jpg",
+             "./image/콩이(9).jpg",
+             "./image/콩이(10).jpg",
+             "./image/콩이(11).jpg",
+             "./image/콩이(12).jpg"];
 let imgs = new Array();
 for (let i=0; i<files.length; i++) {
   imgs[i] = new Image();
