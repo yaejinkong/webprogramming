@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>    
+    <script src="./main.js" charset="UTF-8"></script>
+    <div id="header">공콩이 성장 갤러리</div>
+    <nav id="menubar">
+        <ul>
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#growth">PHOTO</a></li>
+            <li><a href="#info">INFO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div id="growth">
+        <p>공콩이의 성장기를 보고 싶다면 ⬇️ 클릭!</p>
+        <img style="border:10px ridge wheat" src="./image/콩이(1).jpg" alt="." width="400" height="230" onclick="change(this)">
+    </div>
+    <div id="tema">
+        <p>🧡테마를 선택하면 공콩이 사진을 볼 수 있어요!🧡</p>
+        <form>
+            <input type="radio" name="theme" value="./image/곰돌이.jpg" onchange="drawImage()" checked> 곰돌이
+            <input type="radio" name="theme" value="./image/미용실패.jpg" onchange="drawImage()"> 독수리
+            <input type="radio" name="theme" value="./image/산책.jpg" onchange="drawImage()"> 산책
+            <input type="radio" name="theme" value="./image/생일.jpg" onchange="drawImage()"> 생일
+            <input type="radio" name="theme" value="./image/엉뚱.jpg" onchange="drawImage()"> 엉뚱
+            <input type="radio" name="theme" value="./image/예쁨.jpg" onchange="drawImage()"> 예쁨
+        </form>
+        <img id="kongimage" src="./image/곰돌이.jpg" alt="" width="400" height="230">
+      </div>
+    <div id="info">
+      <p>🐶공콩이's INFORMATION🐶</p>
+      <div id="info1">
+        <div id="info-left">
+        <ul>
+          <li><span style="background-color: #fff5b1">기본정보</span></li>
+          <ul>
+            <li>이름 : 공콩이</li>
+            <li>생년월일 : 2012년 11월 30일</li>
+            <li>견종 : 말티즈</li>
+            <li>거주지 : 부산</li>
+            <li>성격 : 매우 귀여운 얼굴과는 다르게 꽤나 성깔이 있다.</li>
+            <li>좋아하는 것 : 고구마, 삶은 계란, 밥알</li>
+          </ul>
+        </ul>
+        </div>
+        <div id="info-right">
+          <ul>
+            <li><span style="background-color: #fff5b1">추가정보</span></li>
+            <ul>
+              <li>공콩이 옷 구매 쇼핑몰</li>
+              <ol type="1">
+                <li><a href="https://www.bricbric.com/" target="_blank">브릭브릭</a></li>
+                <li><a href="https://munikund.com/" target="_blank">뮤니쿤드</a></li>
+                <li>다이소도 괜찮은 옷들이 많아서 추천!</li>
+              </ol>
+              <li>공콩이 사료 : <a href="https://naturalcore.co.kr/product/%EC%97%90%EC%BD%94-2-%EB%8D%95/21/category/29/display/1/" target="_blank">네추럴코어</a></li>
+              <li>부산 강아지 동반 놀거리 추천</li>
+              <ol type="1">
+                <li><a href="https://www.instagram.com/hanaduldul_cafe/" target="_blank">하나둘둘 애견카페</a></li>
+                <li><a href="https://map.naver.com/p/search/%EA%B8%B0%EC%9E%A5%20%EB%82%99%EC%9B%90%EB%86%8D%EC%9B%90/place/16889607?placePath=?entry=pll&from=nx&fromNxList=true&searchType=place&c=15.00,0,0,0,dh" target="_blank">낙원농장</a></li>
+                <li><a href="https://www.instagram.com/sis_coffee_/" target="_blank">양산 SIS COFFEE</a></li>
+              </ol>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <p>📆공콩이와의 약속 잡기잡기📆</p>
+      <hr>
+      <h2>공콩이와의 만남을 원하시면 약속을 먼저 잡아주세요~</h2>
+      <form id="appointmentForm">
+        <table>
+          <tr><td>이름</td>
+            <td><input type="text" id="appointmentName"></td></tr>
+          <tr><td>약속날짜</td>
+              <td><input type="date" id="appointmentDate" value="2023-12-11"></td></tr>
+          <tr><td>약속시간</td>
+              <td><input type="time" id="appointmentTime"></td></tr>
+          <tr><td>약속장소</td>
+              <td><input type="text" id="appointmentPlace"></td></tr>
+        </table>
+        <input type="button" value="입력" onclick="scheduleAppointment()">
+      </form> 
+    </div>
+    <div id="video">
+        <video src="video.MOV" width="290" height="600" controls loop autoplay></video>
+    </div>
+</body>
+</html>
+
